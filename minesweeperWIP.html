@@ -292,7 +292,7 @@ if(typeof(Storage) != null) {
     timesReset = 0;
     localStorage.setItem("timesReset",0);
   }
-  highScores = localStorage.getItem("highScores");
+  highScores = JSON.parse(localStorage.getItem("highScores"));
   if(highScores == null) {
    	highScores = [[999,999,999],[999,999,999],[999,999,999]];
     localStorage.setItem("highScores",JSON.stringify(highScores));
