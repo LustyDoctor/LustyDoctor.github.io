@@ -297,13 +297,13 @@ if(typeof(Storage) != null) {
    	highScores = [[999,999,999],[999,999,999],[999,999,999]];
     localStorage.setItem("highScores",JSON.stringify(highScores));
   }
-} else {
+} else { // no local storage available
     difficulty = 1;
     color = 1;
     gamesWon = 0;
     gamesLost = 0;
     timesReset = 0;
-	hightScores = JSON.parse(highScores);
+    hightScores = [[999,999,999],[999,999,999],[999,999,999]];
     
 
 }
